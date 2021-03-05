@@ -24,7 +24,7 @@ app.get("", (req, res) => {
     res.render("index", {
         title: "Weather",
         body: "Use this site to get your weather!",
-        name: "Arveus",
+        name: "Akshat Raj Vansh",
     });
 });
 
@@ -57,8 +57,8 @@ app.get("/weather", (req, res) => {
 app.get("/about", (req, res) => {
     res.render("about", {
         title: "About Me",
-        body: "Hey! Welcome to my local website.",
-        name: "Arveus",
+        body: "This site was created by Akshat Raj Vansh. It uses data from mapbox.com and weatherstack.com!",
+        name: "Akshat Raj Vansh",
     });
 });
 
@@ -66,7 +66,7 @@ app.get("/help", (req, res) => {
     res.render("help", {
         title: "Help Page",
         body: "This page will provide you with all the help you'll ever need.",
-        name: "Arveus",
+        name: "Akshat Raj Vansh",
     });
 });
 
@@ -74,7 +74,7 @@ app.get("/help/*", (req, res) => {
     res.render("404", {
         title: "Error 404",
         error: "Help article not found!",
-        name: "Arveus",
+        name: "Akshat Raj Vansh",
     });
 });
 
@@ -82,7 +82,7 @@ app.get("*", (req, res) => {
     res.render("404", {
         title: "Error 404",
         error: "Page not found!",
-        name: "Arveus",
+        name: "Akshat Raj Vansh",
     });
 });
 
